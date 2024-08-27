@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/authentication', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://Delote:eeeee@clustedee.t673u.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Express session
 app.use(session({ secret: 'yourSecret', resave: false, saveUninitialized: true }));
